@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Fashion Boutique</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#fdf8f3] text-gray-800 font-sans">
+
+  <!-- Replace navbars in ALL pages with this -->
+  <header class="bg-white shadow-md py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="text-xl font-bold text-indigo-600">FashionBoutique</a>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-indigo-600">Home</a>
+        <a href="shop.html" class="hover:text-indigo-600">Shop</a>
+        <a href="cart.html" class="hover:text-indigo-600">Cart</a>
+        <a href="about.html" class="hover:text-indigo-600">About</a>
+        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- About Section -->
+  <section class="py-20 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-6">Our Story</h1>
+      <p class="text-gray-700 text-lg leading-relaxed mb-8">
+        FashionBoutique was born out of a passion for timeless fashion that blends elegance with everyday wearability.
+        What started as a small dream quickly blossomed into a growing brand that now serves customers around the world.
+      </p>
+      <p class="text-gray-600 text-md leading-relaxed">
+        We believe fashion is more than trends – it’s an expression of who you are. That’s why we hand-pick our
+        collection to reflect quality,
+        individuality, and sophistication. Whether you’re dressing for a night out or a cozy weekend in, we’ve got the
+        perfect piece for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12">Meet the Team</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Team Member -->
+        <div class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-md transition">
+          <div class="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
+          <h3 class="font-semibold text-lg text-gray-800">Aun Ali</h3>
+          <p class="text-sm text-gray-600">Founder & Designer</p>
+        </div>
+
+        <div class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-md transition">
+          <div class="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
+          <h3 class="font-semibold text-lg text-gray-800">Sarah Khan</h3>
+          <p class="text-sm text-gray-600">Marketing Head</p>
+        </div>
+
+        <div class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-md transition">
+          <div class="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
+          <h3 class="font-semibold text-lg text-gray-800">Raza Ali</h3>
+          <p class="text-sm text-gray-600">Customer Experience</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10 mt-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+
+      <!-- About -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">FashionBoutique</h3>
+        <p class="text-gray-400 text-sm">Curating timeless styles for modern elegance. Discover fashion that speaks your
+          story.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="shop.html" class="hover:text-white transition">Shop</a></li>
+          <li><a href="about.html" class="hover:text-white transition">About</a></li>
+          <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Get in Touch</h4>
+        <p class="text-gray-400 text-sm mb-2">Email: hello@fashionboutique.com</p>
+        <p class="text-gray-400 text-sm">Phone: +92 300 1234567</p>
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="hover:text-white transition">Facebook</a>
+          <a href="#" class="hover:text-white transition">Instagram</a>
+        </div>
+      </div>
+
+      <!-- Newsletter Signup -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+        <p class="text-gray-400 text-sm mb-3">Stay updated with the latest drops & deals.</p>
+        <form class="flex flex-col space-y-3">
+          <input type="email" placeholder="Enter your email"
+            class="px-3 py-2 rounded bg-gray-800 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <button type="submit"
+            class="bg-orange-500 hover:bg-orange-600 transition text-white px-4 py-2 rounded text-sm font-semibold">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-6">
+      &copy; 2025 FashionBoutique. All rights reserved.
+    </div>
+  </footer>
+  <!-- Scroll to Top Button -->
+<button id="scrollTopBtn"
+  class="hidden fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition z-50">
+  ↑
+</button>
+
+<script>
+  const scrollBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.remove('hidden');
+    } else {
+      scrollBtn.classList.add('hidden');
+    }
+  });
+
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+
+</body>
+
+</html>

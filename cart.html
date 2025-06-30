@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Fashion Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#fdf8f3] text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-xl font-bold text-indigo-600">FashionBoutique</a>
+            <nav class="space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-indigo-600">Home</a>
+                <a href="shop.html" class="hover:text-indigo-600">Shop</a>
+                <a href="cart.html" class="hover:text-indigo-600">Cart</a>
+                <a href="about.html" class="hover:text-indigo-600">About</a>
+                <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Your Shopping Cart</h2>
+            <div id="cart-items" class="space-y-6"></div>
+            <div class="mt-8 text-right text-xl font-semibold">
+                Total: $<span id="cart-total">0.00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 mt-16">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-6 text-sm">
+            <div>
+                <h3 class="text-xl font-bold mb-2">FashionBoutique</h3>
+                <p class="text-gray-400">Elegant, timeless, and curated for you. Fashion made personal.</p>
+            </div>
+            <div class="text-right">
+                <p class="text-gray-500">© 2025 FashionBoutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cartTotalEl = document.getElementById('cart-total');
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function renderCart() {
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                total += item.price;
+
+                const cartItem = document.createElement('div');
+                cartItem.className = "flex justify-between items-center bg-white shadow rounded-xl p-4";
+                cartItem.innerHTML = `
+                    <div>
+                        <h3 class="text-lg font-semibold">${item.name}</h3>
+                        <p class="text-gray-600">$${item.price.toFixed(2)}</p>
+                    </div>
+                    <button onclick="removeFromCart(${index})" class="text-red-500 hover:underline">Remove</button>
+                `;
+
+                cartItemsContainer.appendChild(cartItem);
+            });
+
+            cartTotalEl.textContent = total.toFixed(2);
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+        }
+
+        renderCart();
+    </script>
+</body>
+
+</html>

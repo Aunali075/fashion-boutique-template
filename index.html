@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Boutique</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-[#fdf8f3] text-gray-800 font-sans relative">
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn"
+    class="hidden fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition z-50">
+    ↑
+  </button>
+
+  <!-- Replace navbars in ALL pages with this -->
+  <header class="bg-white shadow-md py-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="text-xl font-bold text-indigo-600">FashionBoutique</a>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-indigo-600">Home</a>
+        <a href="shop.html" class="hover:text-indigo-600">Shop</a>
+        <a href="cart.html" class="hover:text-indigo-600">Cart</a>
+        <a href="about.html" class="hover:text-indigo-600">About</a>
+        <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+
+  <section
+    class="min-h-screen flex items-center justify-center text-center px-4 bg-[url('https://images.unsplash.com/photo-1523275335684-37898b6baf30')] bg-cover bg-center relative">
+    <div class="bg-black bg-opacity-50 p-8 rounded-xl max-w-2xl animate-fadeIn">
+      <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Elevate Your Style</h1>
+      <p class="text-lg md:text-xl text-gray-200 mb-6">Discover our curated collection of boutique fashion — handpicked,
+        elegant, timeless.</p>
+      <a href="shop.html"
+        class="bg-white text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-black hover:text-white transition">Shop
+        Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Featured Collections</h2>
+
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-3">
+        <!-- Cards -->
+        <!-- Repeated -->
+        <div
+          class="bg-white shadow-lg rounded-2xl overflow-hidden transform hover:scale-105 transition duration-300 cursor-pointer">
+          <div class="w-full h-64 bg-gray-200 flex items-center justify-center text-gray-500 text-xl">Image</div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Elegant Linen Dress</h3>
+            <p class="text-gray-600 mb-4">Breezy, breathable and chic – made from 100% organic fabric.</p>
+            <a href="#" class="text-indigo-600 font-medium hover:underline">View Details</a>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-2xl overflow-hidden transform hover:scale-105 transition duration-300 cursor-pointer">
+          <div class="w-full h-64 bg-gray-200 flex items-center justify-center text-gray-500 text-xl">Image</div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Modern Silk Top</h3>
+            <p class="text-gray-600 mb-4">A modern twist to classic fashion. Smooth, soft, and stylish.</p>
+            <a href="#" class="text-indigo-600 font-medium hover:underline">View Details</a>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow-lg rounded-2xl overflow-hidden transform hover:scale-105 transition duration-300 cursor-pointer">
+          <div class="w-full h-64 bg-gray-200 flex items-center justify-center text-gray-500 text-xl">Image</div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Flowy Summer Skirt</h3>
+            <p class="text-gray-600 mb-4">Lightweight and luxurious – perfect for your summer walks.</p>
+            <a href="#" class="text-indigo-600 font-medium hover:underline">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-indigo-600 py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Join Our Boutique Community</h2>
+      <p class="text-indigo-100 mb-8 text-lg">Be the first to know about exclusive drops, seasonal offers, and fashion
+        inspiration.</p>
+      <a href="#"
+        class="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Subscribe
+        Now</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-white py-20 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-12">What Our Customers Say</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition">
+          <p class="text-gray-700 mb-4 italic">"Absolutely in love with their new summer collection! Everything feels
+            luxurious."</p>
+          <h4 class="font-semibold text-indigo-600">— Ayesha M.</h4>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition">
+          <p class="text-gray-700 mb-4 italic">"Fast delivery and the quality was beyond my expectations. Will shop
+            again!"</p>
+          <h4 class="font-semibold text-indigo-600">— Sara K.</h4>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-md transition">
+          <p class="text-gray-700 mb-4 italic">"Elegant designs and fits perfectly. Got so many compliments!"</p>
+          <h4 class="font-semibold text-indigo-600">— Hina R.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+
+      <!-- About -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">FashionBoutique</h3>
+        <p class="text-gray-400 text-sm">Curating timeless styles for modern elegance. Discover fashion that speaks your
+          story.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#" class="hover:text-white transition">Home</a></li>
+          <li><a href="#" class="hover:text-white transition">Shop</a></li>
+          <li><a href="#" class="hover:text-white transition">About</a></li>
+          <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Get in Touch</h4>
+        <p class="text-gray-400 text-sm mb-2">Email: hello@fashionboutique.com</p>
+        <p class="text-gray-400 text-sm">Phone: +92 300 1234567</p>
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="hover:text-white transition">Facebook</a>
+          <a href="#" class="hover:text-white transition">Instagram</a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+        <p class="text-gray-400 text-sm mb-3">Stay updated with the latest drops & deals.</p>
+        <form class="flex flex-col space-y-3">
+          <input type="email" placeholder="Enter your email"
+            class="px-3 py-2 rounded bg-gray-800 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <button type="submit"
+            class="bg-orange-500 hover:bg-orange-600 transition text-white px-4 py-2 rounded text-sm font-semibold">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-6">
+      &copy; 2025 FashionBoutique. All rights reserved.
+    </div>
+  </footer>
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn"
+    class="hidden fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition z-50">
+    ↑
+  </button>
+
+  <script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.remove('hidden');
+      } else {
+        scrollBtn.classList.add('hidden');
+      }
+    });
+
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+
+  <script src="js/products.js"></script>
+  <script src="js/shop.js"></script> <!-- or cart.js if it's the cart page -->
+
+</body>
+
+</html>
